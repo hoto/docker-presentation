@@ -4,7 +4,7 @@ Each of those commands will download an image from public Docker Hub ()if not al
 
 
     docker run --rm --interactive --tty ubuntu:16.10
-    docker run --rm -it node:6.2.2
+    docker run --rm -it node:6.9.2
     docker run --rm -it python:3.5.1
     docker run --rm -it haskel:8.0.1
     docker run --rm -it clojure:3.0
