@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node src/app.js"
+  },
+  "dependencies": {
+    "express": "4.14.0"
   }
 }
