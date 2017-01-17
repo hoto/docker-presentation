@@ -11,5 +11,4 @@ docker run \
   busybox:1.26.1 sh
 
 # clean up
-docker stop mongo
-docker rm mongo
+docker rm --force mongo

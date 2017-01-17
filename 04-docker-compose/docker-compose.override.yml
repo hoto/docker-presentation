@@ -1,0 +1,5 @@
+version: '2'
+services:
+
+  my_node_app:
+    command: npm run start:dev
