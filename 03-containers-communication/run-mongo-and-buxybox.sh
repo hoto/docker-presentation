@@ -1,3 +1,5 @@
+#! /bin/bash
+
 docker run --detach \
   --name mongo \
   --expose 27017 \
