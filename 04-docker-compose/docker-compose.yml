@@ -1,0 +1,21 @@
+version: '2'
+services:
+
+  mongo:
+    image: mongo:3.4.1
+    container_name: mongo
+    expose:
+      - 27017
+    volumes:
+      - ./data:/data/db
+
+  my_node_app:
+    build: .
+    image: my_node_app:1.0.0
+    container_name: my_node_app
+    links:
+      - "mongo:mongo"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./src:/app/src
